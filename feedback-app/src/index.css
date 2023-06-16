@@ -41,6 +41,11 @@ header {
   position: relative;
 }
 
+.card.reverse {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
 .card h2 {
   font-size: 22px;
   font-weight: 600;
@@ -126,13 +131,18 @@ input:focus {
   left: -10px;
 }
 
-.close {
+.close,
+.edit {
   position: absolute;
   top: 10px;
   right: 20px;
   cursor: pointer;
   background: none;
   border: none;
+}
+
+.edit {
+  right: 40px;
 }
 
 .btn {
@@ -176,19 +186,31 @@ input:focus {
 }
 
 .about-link {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  color: #fff;
-  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .about-link a {
   color: #fff;
+  cursor: pointer;
 }
 
 .about-link a:hover {
   color: #ff6a95;
+}
+
+.homeLink {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #977db3;
+  color: #2b014e;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .about h1 {
